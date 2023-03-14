@@ -21,6 +21,14 @@ import {
     DirectionsRenderer,
   } from '@react-google-maps/api'
   import { useRef, useState } from 'react'
+
+  const grabAddress = (event) => {
+    event.preventDefault();
+    dispatch({
+      type:'SET_PROPERTY_ADDRESS'
+    })
+    console.log(grabAddress)
+  }
   
   const center = { lat: 44.9780, lng: -93.2635 }
   
